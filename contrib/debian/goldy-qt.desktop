@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=GOLDY
+Comment=GOLDY P2P Cryptocurrency
+Comment[fr]=GOLDY, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=GOLDY, eşten eşe kriptografik sanal para birimi
+Exec=goldy-qt %u
+Terminal=false
+Type=Application
+Icon=goldy128
+MimeType=x-scheme-handler/goldy;
+Categories=Office;Finance;

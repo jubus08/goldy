@@ -1,0 +1,26 @@
+[Unit]
+Description=GOLDY COIN's distributed currency daemon
+After=network.target
+
+[Service]
+User=goldy
+Group=goldy
+
+Type=forking
+PIDFile=/var/lib/goldyd/goldyd.pid
+
+ExecStart=/usr/bin/goldyd -daemon -pid=/var/lib/goldyd/goldyd.pid \
+          -conf=/etc/goldy/goldy.conf -datadir=/var/lib/goldyd
+
+ExecStop=-/usr/bin/goldy-cli -conf=/etc/goldy/goldy.conf \
+         -datadir=/var/lib/goldyd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Protocol]
+exec=goldy-qt '%u'
+protocol=goldy
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

@@ -1,0 +1,28 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/goldy_bg.qm</file>
+        <file alias="ca">locale/goldy_ca.qm</file>
+        <file alias="cs">locale/goldy_cs.qm</file>
+        <file alias="da">locale/goldy_da.qm</file>
+        <file alias="de">locale/goldy_de.qm</file>
+        <file alias="en">locale/goldy_en.qm</file>
+        <file alias="en_US">locale/goldy_en_US.qm</file>
+        <file alias="es">locale/goldy_es.qm</file>
+        <file alias="fi">locale/goldy_fi.qm</file>
+        <file alias="fr_FR">locale/goldy_fr_FR.qm</file>
+        <file alias="it">locale/goldy_it.qm</file>
+        <file alias="ja">locale/goldy_ja.qm</file>
+        <file alias="ko_KR">locale/goldy_ko_KR.qm</file>
+        <file alias="nl">locale/goldy_nl.qm</file>
+        <file alias="pl">locale/goldy_pl.qm</file>
+        <file alias="pt">locale/goldy_pt.qm</file>
+        <file alias="pt_BR">locale/goldy_pt_BR.qm</file>
+        <file alias="ro_RO">locale/goldy_ro_RO.qm</file>
+        <file alias="ru">locale/goldy_ru.qm</file>
+        <file alias="sk">locale/goldy_sk.qm</file>
+        <file alias="sv">locale/goldy_sv.qm</file>
+        <file alias="uk">locale/goldy_uk.qm</file>
+        <file alias="zh_CN">locale/goldy_zh_CN.qm</file>
+        <file alias="zh_TW">locale/goldy_zh_TW.qm</file>
+    </qresource>
+</RCC>

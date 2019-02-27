@@ -1,0 +1,26 @@
+# /etc/conf.d/goldyd: config file for /etc/init.d/goldyd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/goldy/goldy.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/goldyd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/goldyd.pid"
+
+# Where to write goldyd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/goldyd"
+
+# User and group to own goldyd process
+#BITCOIND_USER="goldy"
+#BITCOIND_GROUP="goldy"
+
+# Path to goldyd executable
+#BITCOIND_BIN="/usr/bin/goldyd"
+
+# Nice value to run goldyd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
