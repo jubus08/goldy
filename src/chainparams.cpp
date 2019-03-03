@@ -54,8 +54,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0xb7834ed822aa36c9254ea4acab052ed876c519f78e02dec1d48222ede98a65c8"))
-    (8, uint256("0x00000cdacc8fbc3d5b62333b2a9507465a6bed354f30d2226312df7cfb86b9c4"));
+    (0, uint256("0x00000c4811a2aac2ff8eec8785fb2f14aba540213df59885681c95d18a482a84"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1539297840, // * UNIX timestamp of last checkpoint block
@@ -129,7 +128,7 @@ public:
          *   vMerkleTree: e0028e
          */
 
-        const char* pszTimestamp = "Fresh GOLDY";
+        const char* pszTimestamp = "Fresh Aegeus";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -140,7 +139,7 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1548774457;
+        genesis.nTime = 1510557266;
         genesis.nBits = 0x1e0fffff;
         genesis.nNonce = 495637;
 
@@ -149,13 +148,13 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
 
-        assert(hashGenesisBlock == uint256("0xb7834ed822aa36c9254ea4acab052ed876c519f78e02dec1d48222ede98a65c8"));
-        assert(genesis.hashMerkleRoot == uint256("0x8c08e1ba3bddcbcc1053f9a0872ec0f5c1fe3066f09c9fff3109530c3d78a591"));
+        assert(hashGenesisBlock == uint256("0x00000c4811a2aac2ff8eec8785fb2f14aba540213df59885681c95d18a482a84"));
+        assert(genesis.hashMerkleRoot == uint256("0x5c499636e3b33705a2949b8ff6a9712804da418acf516c936c7df766dc7f1b17"));
 
         vSeeds.push_back(CDNSSeedData("77.55.193.195", "77.55.193.195"));       
-	vSeeds.push_back(CDNSSeedData("91.235.116.213", "91.235.116.213"));    
+	vSeeds.push_back(CDNSSeedData("91.235.116.213", "91.235.116.213"));
         vSeeds.push_back(CDNSSeedData("77.55.193.205", "77.55.193.205"));       
-	vSeeds.push_back(CDNSSeedData("35.198.140.190", "35.198.140.190"));  	
+	vSeeds.push_back(CDNSSeedData("35.198.140.190", "35.198.140.190"));       
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 38);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 83);
@@ -179,7 +178,7 @@ public:
 
         nPoolMaxTransactions = 3;
         strSporkKey = "044886172e4635ab5a74863bfccbf19c7a424339448d9622ddbc970c71c085c379be8c37a7fe6ceae3dc75b7366adc1aaabd8135369e3f4f740d3270aee6be6bc7";
-        strObfuscationPoolDummyAddress = "GgbAVD1kwgS3k8tMB75vZemvBwfVYcgiWC";
+        strObfuscationPoolDummyAddress = "D87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
         nStartMasternodePayments = 1403728576;
     }
 
@@ -223,8 +222,8 @@ public:
 
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0f1fab8ab4318f8ba5883a3e82e7eab08fbb2791c493aee0f6e8617c81529a82"));
-        assert(genesis.hashMerkleRoot == uint256("0x8c08e1ba3bddcbcc1053f9a0872ec0f5c1fe3066f09c9fff3109530c3d78a591"));
+        assert(hashGenesisBlock == uint256("0x00000ae4a05aa8ffcaa8b5fd246560dc45af54a8868dc6f2f4ffa3cb850f01ad"));
+        assert(genesis.hashMerkleRoot == uint256("0x5c499636e3b33705a2949b8ff6a9712804da418acf516c936c7df766dc7f1b17"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
